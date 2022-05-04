@@ -9,7 +9,7 @@ import GenListe from './adminlist';
  salary : "35", units : "Hours",
  currency : "USD", requirements : "Be a dog"}]; 
 
-class liste extends React.Component {
+class Liste extends React.Component {
 
     constructor(props){
         super(props);
@@ -81,4 +81,4 @@ class liste extends React.Component {
         )
     }
 }
-export default liste;
+export default Liste;

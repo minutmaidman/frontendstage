@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
-//import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 import Navbar from './components/navbar/navbar';
 import Liste from './components/list/joblist';
 //import Ajout from './components/ajout/ajout';
@@ -14,7 +14,7 @@ class App extends React.Component {
       <Router>
 
         <Route exact path="/">
-          <Navigate to="/logo" />
+          <Navigate to="/joblist" />
         </Route>
 
         <Navbar/>
