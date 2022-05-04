@@ -6,15 +6,22 @@ class GenListe extends React.Component {
 
         return (
             <tr>
-                <td>{this.props.utilisateurs.code}</td>
-                <td>{this.props.utilisateurs.nom}</td>
-                <td>{this.props.utilisateurs.prenom}</td>
-                <td>{this.props.utilisateurs.email}</td>
-                <td>{this.props.utilisateurs.username}</td>
-                <td>{this.props.utilisateurs.password}</td>
+                <td>{this.props.offres.id}</td>
+                <td>{this.props.offres.title}</td>
+                <td>{this.props.offres.datePosted}</td>
+                <td>{this.props.offres.validTill}</td>
+                <td>{this.props.offres.description}</td>
+                <td>{this.props.offres.companyName}</td>
+                <td>{this.props.offres.location}</td>
+                <td>{this.props.offres.jobType}</td>
+                <td>{this.props.offres.employmentType}</td>
+                <td>{this.props.offres.salary}</td>
+                <td>{this.props.offres.units}</td>
+                <td>{this.props.offres.currency}</td>
+                <td>{this.props.offres.requirements}</td>
                 <td>
                     
-                <Link to={"/edit/" + this.props.utilisateurs._id}>Édition</Link> <a href="#" onClick={() => { this.props.deleteUtil(this.props.utilisateurs._id)}}>Suppression</a>
+                <Link to={"/edit/" + this.props.offres._id}>Édition</Link> <a href="#" onClick={() => { this.props.deleteUtil(this.props.offres._id)}}>Suppression</a>
                 </td>
             </tr>
         )
