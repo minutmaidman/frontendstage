@@ -6,8 +6,7 @@ import Liste from './components/list/joblist';
 import Dashboard from './components/dashboard/dashboard';
 import Register from './components/Register';
 import Login from './components/Login';
-//import Ajout from './components/ajout/ajout';
-//import Logo from './components/logo/logo';
+import AddOffer from './components/crud/addoffer';
 import { Navigate } from "react-router-dom"; 
 
 class App extends React.Component {
@@ -17,8 +16,25 @@ class App extends React.Component {
       <Router>
 
         <Route exact path="/">
+          <Navbar/>
+          <Dashboard/>
+        </Route>
+        
+        <Route exact path="/register">
+          <Navbar/>
           <Register/>
         </Route>
+
+        <Route exact path='/login'>
+          <Navbar/>
+          <Login/>
+        </Route>
+
+        <Route exact path='/addoffer'>
+          <Navbar/>
+          <AddOffer/>
+        </Route>
+
       </Router>
     </div>
   );

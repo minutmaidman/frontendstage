@@ -13,7 +13,7 @@ class Navbar extends React.Component {
                         <Link to="/liste" className="nav-link ">Users</Link>
                     </li>
                     <li className="navbar-item">
-                    <Link to="/ajout" className="nav-link ">Sign Up</Link>
+                    <Link to="/register" className="nav-link ">Sign Up</Link>
                     </li>
                     </ul>
                 </div>

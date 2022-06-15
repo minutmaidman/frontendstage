@@ -15,7 +15,7 @@ class Dashboard extends React.Component{
       <p class="lead">
         <a class="btn btn-primary btn-lg" href="#" role="button">Postuler   </a>
         |
-        <a class="btn btn-primary btn-lg" href="#" role="button">Faire une annonce</a>
+        <a class="btn btn-primary btn-lg" href="/addoffer" role="button">Faire une annonce</a>
       </p>
     </div>
      )}}
